@@ -2,104 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cool Air Conditioning</title>
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      background: #0f172a;
-      color: white;
-      text-align: center;
-    }
-
-    header {
-      background: #020617;
-      padding: 20px;
-      font-size: 24px;
-    }
-
-    .hero {
-      padding: 80px 20px;
-    }
-
-    .btn {
-      padding: 12px 20px;
-      background: #38bdf8;
-      border: none;
-      cursor: pointer;
-      margin-top: 20px;
-      border-radius: 5px;
-    }
-
-    .services {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      padding: 40px;
-    }
-
-    .card {
-      background: #1e293b;
-      margin: 10px;
-      padding: 20px;
-      border-radius: 10px;
-      width: 200px;
-      transition: 0.3s;
-    }
-
-    .card:hover {
-      transform: scale(1.1);
-    }
-
-    footer {
-      padding: 20px;
-      background: #020617;
-    }
-  </style>
+  <title>AI Website</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  ❄ Cool Air Conditioning
-</header>
+  <h1>My AI Website</h1>
 
-<section class="hero">
-  <h1 id="text"></h1>
-  <p>AC Repair | Installation | Service</p>
-  <button class="btn" onclick="callNow()">Call Now</button>
-</section>
+  <div id="chat-box"></div>
 
-<section class="services">
-  <div class="card">AC Repair</div>
-  <div class="card">Installation</div>
-  <div class="card">Maintenance</div>
-</section>
+  <input id="user-input" placeholder="Type here..." />
+  <button onclick="sendMessage()">Send</button>
 
-<footer>
-  <p>© 2026 Cool Air Conditioning</p>
-</footer>
-
-<script>
-  // Typing effect
-  const msg = "Welcome to Cool Air Conditioning";
-  let i = 0;
-
-  function type() {
-    if (i < msg.length) {
-      document.getElementById("text").innerHTML += msg.charAt(i);
-      i++;
-      setTimeout(type, 50);
-    }
-  }
-  type();
-
-  function callNow() {
-    alert("Call us at +91-XXXXXXXXXX");
-  }
-</script>
+  <script src="script.js"></script>
 
 </body>
 </html>
