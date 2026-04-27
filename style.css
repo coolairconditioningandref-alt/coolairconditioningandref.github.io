@@ -1,0 +1,14 @@
+body {
+  font-family: Arial;
+  background: #222;
+  color: white;
+  text-align: center;
+}
+
+#chat-box {
+  height: 300px;
+  border: 1px solid white;
+  margin: 20px;
+  padding: 10px;
+  overflow-y: auto;
+}
