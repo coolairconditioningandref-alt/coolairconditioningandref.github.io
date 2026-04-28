@@ -3,31 +3,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI Smart Assistant</title>
+  <title>Cool Air Conditioning & Repair</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="container">
+<!-- HEADER -->
+<header>
+  <div class="logo">❄️ Cool Air</div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#services">Services</a>
+    <a href="#reviews">Reviews</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a class="call-btn" href="tel:15873150184">Call Now</a>
+</header>
 
-    <header>
-      <h1>⚡ AI Smart Assistant</h1>
-      <p>Ask anything about AC, repair, services</p>
-    </header>
+<!-- HERO -->
+<section class="hero">
+  <h1>Professional AC Repair & Installation</h1>
+  <p>Fast • Reliable • Affordable</p>
+  <button onclick="scrollToContact()">BOOK NOW</button>
+</section>
 
-    <div id="chat-box" class="chat-box">
-      <div class="bot message">👋 Hello! How can I help you?</div>
+<!-- SERVICES -->
+<section id="services">
+  <h2>Our Services</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
+      <h3>AC Repair</h3>
+      <p>Fast diagnostics and expert repair service.</p>
     </div>
 
-    <div class="input-area">
-      <input id="user-input" placeholder="Type your message..." />
-      <button onclick="sendMessage()">Send</button>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1598514982901-4a7c8d0d8b4d">
+      <h3>Installation</h3>
+      <p>Professional installation of all AC systems.</p>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
+      <h3>Maintenance</h3>
+      <p>Keep your AC running efficiently year-round.</p>
     </div>
 
   </div>
+</section>
 
-  <script src="script.js"></script>
+<!-- WHY CHOOSE US -->
+<section class="why">
+  <h2>Why Choose Us</h2>
+  <ul>
+    <li>✔ 24/7 Emergency Service</li>
+    <li>✔ Affordable Pricing</li>
+    <li>✔ Certified Technicians</li>
+    <li>✔ 5-Star Customer Service</li>
+  </ul>
+</section>
 
+<!-- REVIEWS -->
+<section id="reviews">
+  <h2>Customer Reviews</h2>
+
+  <div class="grid">
+    <div class="card">
+      ⭐⭐⭐⭐⭐
+      <p>“Amazing service, fixed my AC in 1 hour!”</p>
+      <strong>- John D.</strong>
+    </div>
+
+    <div class="card">
+      ⭐⭐⭐⭐⭐
+      <p>“Very professional and affordable.”</p>
+      <strong>- Sarah K.</strong>
+    </div>
+
+    <div class="card">
+      ⭐⭐⭐⭐⭐
+      <p>“Highly recommend for AC repair!”</p>
+      <strong>- Ahmed N.</strong>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT FORM -->
+<section id="contact">
+  <h2>Get a Free Quote</h2>
+
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <input type="email" placeholder="Email" required>
+    <textarea placeholder="Describe your issue"></textarea>
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="address">
+    <h3>Our Location</h3>
+    <p>925 26 St NE, Calgary, AB</p>
+    <p>Phone: (587) 315-0184</p>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Cool Air Conditioning & Repair</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
