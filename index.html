@@ -2,18 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>AI Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Smart Assistant</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <h1>My AI Website</h1>
+  <div class="container">
 
-  <div id="chat-box"></div>
+    <header>
+      <h1>⚡ AI Smart Assistant</h1>
+      <p>Ask anything about AC, repair, services</p>
+    </header>
 
-  <input id="user-input" placeholder="Type here..." />
-  <button onclick="sendMessage()">Send</button>
+    <div id="chat-box" class="chat-box">
+      <div class="bot message">👋 Hello! How can I help you?</div>
+    </div>
+
+    <div class="input-area">
+      <input id="user-input" placeholder="Type your message..." />
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+  </div>
 
   <script src="script.js"></script>
 
