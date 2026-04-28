@@ -2,118 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cool Air Conditioning & Repair</title>
+  <title>CoolFix - AC Service & Repair</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <!-- HEADER -->
 <header>
-  <div class="logo">❄️ Cool Air</div>
+  <h1>CoolFix</h1>
   <nav>
     <a href="#">Home</a>
     <a href="#services">Services</a>
     <a href="#reviews">Reviews</a>
-    <a href="#contact">Contact</a>
+    <a href="#faq">FAQ</a>
   </nav>
-  <a class="call-btn" href="tel:15873150184">Call Now</a>
 </header>
 
 <!-- HERO -->
 <section class="hero">
-  <h1>Professional AC Repair & Installation</h1>
-  <p>Fast • Reliable • Affordable</p>
-  <button onclick="scrollToContact()">BOOK NOW</button>
+  <h2>AC Service & Repair</h2>
+  <p>4.8 ⭐ (1M+ bookings)</p>
+  <button onclick="scrollToServices()">Book Now</button>
 </section>
 
 <!-- SERVICES -->
 <section id="services">
-  <h2>Our Services</h2>
+  <h2>Select a Service</h2>
 
-  <div class="grid">
+  <div class="cards">
+    <div class="card">
+      <h3>Foam Jet Service</h3>
+      <p>Deep cleaning with power jet</p>
+      <button onclick="addToCart('Foam Jet Service')">Add</button>
+    </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1581578731548-c64695cc6952">
       <h3>AC Repair</h3>
-      <p>Fast diagnostics and expert repair service.</p>
+      <p>Fix cooling, noise & leakage</p>
+      <button onclick="addToCart('AC Repair')">Add</button>
     </div>
 
     <div class="card">
-      <img src="https://images.unsplash.com/photo-1598514982901-4a7c8d0d8b4d">
+      <h3>Gas Refill</h3>
+      <p>Restore cooling efficiency</p>
+      <button onclick="addToCart('Gas Refill')">Add</button>
+    </div>
+
+    <div class="card">
       <h3>Installation</h3>
-      <p>Professional installation of all AC systems.</p>
+      <p>Split & Window AC install</p>
+      <button onclick="addToCart('Installation')">Add</button>
     </div>
-
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231">
-      <h3>Maintenance</h3>
-      <p>Keep your AC running efficiently year-round.</p>
-    </div>
-
   </div>
 </section>
 
-<!-- WHY CHOOSE US -->
-<section class="why">
+<!-- CART -->
+<section class="cart">
+  <h2>Your Cart</h2>
+  <ul id="cartItems"></ul>
+  <button onclick="checkout()">Checkout</button>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
   <h2>Why Choose Us</h2>
-  <ul>
-    <li>✔ 24/7 Emergency Service</li>
-    <li>✔ Affordable Pricing</li>
-    <li>✔ Certified Technicians</li>
-    <li>✔ 5-Star Customer Service</li>
-  </ul>
+  <div class="feature-box">
+    <p>✔ Verified Professionals</p>
+    <p>✔ Hassle-Free Booking</p>
+    <p>✔ Transparent Pricing</p>
+  </div>
 </section>
 
 <!-- REVIEWS -->
 <section id="reviews">
   <h2>Customer Reviews</h2>
 
-  <div class="grid">
-    <div class="card">
-      ⭐⭐⭐⭐⭐
-      <p>“Amazing service, fixed my AC in 1 hour!”</p>
-      <strong>- John D.</strong>
-    </div>
-
-    <div class="card">
-      ⭐⭐⭐⭐⭐
-      <p>“Very professional and affordable.”</p>
-      <strong>- Sarah K.</strong>
-    </div>
-
-    <div class="card">
-      ⭐⭐⭐⭐⭐
-      <p>“Highly recommend for AC repair!”</p>
-      <strong>- Ahmed N.</strong>
-    </div>
+  <div class="review">
+    <p>⭐⭐⭐⭐⭐</p>
+    <p>Excellent service, very professional!</p>
   </div>
+
+  <div class="review">
+    <p>⭐⭐⭐⭐⭐</p>
+    <p>Quick and clean work. Highly recommended.</p>
+  </div>
+
 </section>
 
-<!-- CONTACT FORM -->
-<section id="contact">
-  <h2>Get a Free Quote</h2>
+<!-- FAQ -->
+<section id="faq">
+  <h2>Frequently Asked Questions</h2>
 
-  <form>
-    <input type="text" placeholder="Full Name" required>
-    <input type="tel" placeholder="Phone Number" required>
-    <input type="email" placeholder="Email" required>
-    <textarea placeholder="Describe your issue"></textarea>
-    <button type="submit">Submit</button>
-  </form>
+  <details>
+    <summary>How long does service take?</summary>
+    <p>Usually 1–2 hours depending on AC type.</p>
+  </details>
 
-  <div class="address">
-    <h3>Our Location</h3>
-    <p>925 26 St NE, Calgary, AB</p>
-    <p>Phone: (587) 315-0184</p>
-  </div>
+  <details>
+    <summary>Do you provide warranty?</summary>
+    <p>Yes, 30-day service warranty.</p>
+  </details>
 
 </section>
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2026 Cool Air Conditioning & Repair</p>
+  <p>© 2026 CoolFix. All rights reserved.</p>
 </footer>
 
 <script src="script.js"></script>
